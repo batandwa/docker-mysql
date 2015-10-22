@@ -1,0 +1,11 @@
+db:
+  image: mysql/mysql-server
+  env_file: config/env.ini
+  environment:
+    MYSQL_ROOT_PASSWORD: admin
+  container_name: mysql
+  ports:
+    - 3306
+  volumes:
+    - ./data:/var/lib/mysql
+
