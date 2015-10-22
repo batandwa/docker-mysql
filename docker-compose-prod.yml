@@ -3,9 +3,3 @@ db:
     file: docker-compose.yml
     service: db
   restart: always
-
-web:
-  extends:
-    file: docker-compose.yml
-    service: web
-  restart: always
